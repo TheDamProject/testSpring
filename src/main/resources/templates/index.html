@@ -7,5 +7,14 @@
 </head>
 <body>
     <p th:text="'Hola , ' + ${name} + '!!' "/>
+
+<table>
+    <th:block th:each="per : ${personas}">
+        <tr>
+            <td th:text="${per.id}"></td>
+            <td th:text="${per.name}"></td>
+        </tr>
+    </th:block>
+</table>
 </body>
 </html>
